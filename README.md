@@ -1,12 +1,12 @@
 Txt Interrogations
 ====================
 
-Questions and answers.
+The idea is to extract questions and answers from movie scripts and mix them up. Possibly if I feel really ambitious I will use [videogrep](https://github.com/antiboredom/videogrep) to turn into a supercut. 
 
+First try: _The Wolf of Wall St._ vs _The Great Gatsby_.
 
 Usage
 ------
-
 
 
 ### Converting PDF to .txt
