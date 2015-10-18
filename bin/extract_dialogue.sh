@@ -1,0 +1,2 @@
+python extract_dialogue.py data/Great-Gatsby.pdf > data/Great-Gatsby_dialogue.txt
+python extract_dialogue.py data/the_wolf_of_wall_street_screenplay.pdf > data/the_wolf_of_wall_street_screenplay_dialogue.txt
