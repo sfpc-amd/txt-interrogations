@@ -15,25 +15,15 @@ pip -r requirements.pip
 Usage
 ------
 
+### Extracting dialogue from screenplay PDFs
 
-### Converting PDF to .txt
+We're using the [pdfminer](https://github.com/euske/pdfminer) library to extract dialogue from movie script PDFs. The scripts follow a standard formatting, but it's based on layout rather than text. So we need to be able to extract text based on margins, etc. `extract_dialogue.py` will take the path to a PDF file as the first argument, and simply grab all of the dialogue text and output to `stdin`. Example usage:
+
+```python
+python extract_dialogue.py data/Great-Gatsby.pdf > data/Great-Gatsby_dialogue.txt
+```
 
 PDFminer:
 
  * https://github.com/euske/pdfminer
  * https://euske.github.io/pdfminer/programming.html
-
-
-
-The quickest & easiest way I was able to do this was to use Automator on a Mac. See `bin/pdf2txt.workflow`. Currently it will simply output the text to your `Desktop` folder. This isn't the best solution but it gets the job done.
-
-It would make sense to find a good python workflow for this, some possible resources:
-
- * http://code.activestate.com/recipes/511465-pure-python-pdf-to-text-converter/
- * http://victorwyee.com/python/convert-pdf-to-text-pypdf-pdfminer-first-impression/
-
-
-
-Possible command-line solutions:
-
- * http://www.foolabs.com/xpdf/download.html
