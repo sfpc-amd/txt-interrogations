@@ -8,8 +8,8 @@ First try: _The Wolf of Wall St._ vs _The Great Gatsby_.
 Setup
 -----
 
-```python
-pip -r requirements.pip
+```bash
+ $ pip -r requirements.pip
 ```
 
 Usage
@@ -19,8 +19,8 @@ Usage
 
 We're using the [pdfminer](https://github.com/euske/pdfminer) library to extract dialogue from movie script PDFs. The scripts follow a standard formatting, but it's based on layout rather than text. So we need to be able to extract text based on margins, etc. `extract_dialogue.py` will take the path to a PDF file as the first argument, and simply grab all of the dialogue text and output to `stdin`. Example usage:
 
-```python
-python extract_dialogue.py data/Great-Gatsby.pdf > data/Great-Gatsby_dialogue.txt
+```bash
+ $ python extract_dialogue.py data/Great-Gatsby.pdf > data/Great-Gatsby_dialogue.txt
 ```
 
 PDFminer:
