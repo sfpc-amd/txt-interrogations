@@ -9,7 +9,7 @@ Setup
 -----
 
 ```bash
- $ pip -r requirements.pip
+ $ pip install -r requirements.pip
 ```
 
 Usage
