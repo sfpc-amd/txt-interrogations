@@ -19,7 +19,7 @@ rsrcmgr = PDFResourceManager()
 
 def setup(path):
 	# Open a PDF file.
-	fp = open('data/Great-Gatsby.pdf', 'rb')
+	fp = open(path, 'rb')
 	# Create a PDF parser object associated with the file object.
 	parser = PDFParser(fp)
 	# Create a PDF document object that stores the document structure.
