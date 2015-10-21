@@ -5,6 +5,18 @@ The idea is to extract questions and answers from movie scripts and mix them up.
 
 First try: _The Wolf of Wall St._ vs _The Great Gatsby_.
 
+Todo
+----
+
+This is kind of boring. What's missing?
+
+- [ ] Clean up and comment code / refactor
+- [ ] Try with different scripts
+- [x] Try different characters?
+- [ ] Map out full script generator?
+- [ ] Other ideas
+
+
 Setup
 -----
 

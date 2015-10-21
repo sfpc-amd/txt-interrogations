@@ -12,18 +12,28 @@ def setup(path1, path2):
 	questions = get_questions(dict2)
 	answers = get_answers(dict1)
 
-	n = 6
-	questions_sample = random.sample(questions['JORDAN'], n)
-	answers_sample = random.sample(answers['GATSBY'], n)
+	# n = 6
+	# questions_sample = random.sample(questions['JORDAN'], n)
+	# answers_sample = random.sample(answers['GATSBY'], n)
+
+	# for i, question in enumerate(questions_sample):
+	# 	print(question['character_name'])
+	# 	print(question['dialogue'])
+	# 	answer = answers_sample[i]
+	# 	print(answer['character_name'])
+	# 	print(answer['dialogue'])
 
 
+	for x in range(0,6):
+		asker = random.choice(questions.keys())
+		answerer = random.choice(answers.keys())
+		question = random.choice(questions[asker])
+		answer = random.choice(answers[answerer])
 
-	for i, question in enumerate(questions_sample):
 		print(question['character_name'])
 		print(question['dialogue'])
-		answer = answers_sample[i]
 		print(answer['character_name'])
-		print(answer['dialogue'])
+		print(answer['dialogue'])	
 
 	# print("JORDAN: "+random.choice(questions['JORDAN'])['dialogue'])
 
